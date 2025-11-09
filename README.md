@@ -61,6 +61,8 @@ There are a few possible solutions:
   Fedora 39 with gnome-shell-45.0 and Xorg
 * 17 Aug 2025: [48](48/) **PASS** on
   Debian 13 with gnome-shell-48.3 and Xorg
+* 8 Nov 2025: [49](49/) **PASS** on
+  Debian 14 with gnome-shell-49.1 and Wayland
 
 ## Change Log
 
@@ -90,6 +92,9 @@ There are a few possible solutions:
 * Rewrite by [@TheBrokenRail](https://github.com/TheBrokenRail) following <https://gjs.guide/extensions/upgrading/gnome-shell-45.html#esm>. See <https://github.com/lxylxy123456/cariboublocker/pull/4>
 
 ### [48](48/)
+* Update `shell-version` in `metadata.json`
+
+### [49](49/)
 * Update `shell-version` in `metadata.json`
 
 ## Relevant Code

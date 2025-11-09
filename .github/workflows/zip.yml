@@ -19,6 +19,7 @@ jobs:
           - '44'
           - '45'
           - '48'
+          - '49'
 
     steps:
     - uses: actions/checkout@v2
@@ -91,6 +92,12 @@ jobs:
         uses: actions/download-artifact@v5
         with:
           name: 48.zip
+          path: .
+
+      - name: Download 49
+        uses: actions/download-artifact@v5
+        with:
+          name: 49.zip
           path: .
 
       - name: Bump version and push tag
@@ -201,4 +208,14 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./48.zip
           asset_name: 48.zip
+          asset_content_type: application/zip
+
+      - name: Release 49
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./49.zip
+          asset_name: 49.zip
           asset_content_type: application/zip
