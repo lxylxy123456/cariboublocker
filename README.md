@@ -1,3 +1,9 @@
+# Deprecated
+
+On my hardware the caribou issue only appears in Xorg (i.e. Wayland works fine). GNOME 49 and above is dropping support for Xorg, so I cannot test this extension anymore. Thus I will be no longer maintaining this project. For people interested in maintaining, please feel free to fork this project and publish your modification to extensions.gnome.org.
+
+lxylxy123456
+
 # cariboublocker for GNOME Shell 3.36 (and above)
 
 Available at: https://extensions.gnome.org/extension/3222/block-caribou-36/
